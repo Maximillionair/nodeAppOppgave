@@ -27,5 +27,9 @@ h1 {
     z-index: 60;
     color: azure;
     outline: black;
-    font-size: xx-large;
+    font-size: 90;
+}
+
+footer {
+    bottom: 0;
 }
