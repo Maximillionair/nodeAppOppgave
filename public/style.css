@@ -21,7 +21,7 @@ img {
 }
 
 h1 {
-    z-index: 2;
+    z-index: 0;
     color: azure;
     outline: black;
 }
