@@ -1,7 +1,6 @@
 async function connectDB() {
     try {
-      // Use the latest Mongoose connection method (without deprecated options)
-      await mongoose.connect('');
+      await mongoose.connect('mongodb://127.0.0.1:27017/');
       console.log('Connected to MongoDB');
     } catch (error) {
       console.error('MongoDB connection failed:', error);
