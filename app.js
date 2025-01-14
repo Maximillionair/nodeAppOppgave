@@ -1,8 +1,10 @@
 const express = require('express');
 const path = require('path');
 const router = require('./router/routes.js'); 
-const app = express();  
-const {connectDB} = require("./handlers/dbhandler.js")
+const app = express();
+const mongoose = require("mongoose");
+const {connectDB} = require("./handlers/dbhandler.js");
+
 
 app.set("views", path.join(__dirname, "views"))
 app.set("view engine", 'ejs');
