@@ -21,4 +21,7 @@ form.addEventListener("submit", function(event){
     if (!isPasswordValid) {
         alert('Passord må være mellom 8-16 tegn og inneholde bokstaver og tall.');
     };
+
+    console.log(username);
+    console.log(password);
 });
