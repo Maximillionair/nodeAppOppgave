@@ -3,6 +3,7 @@
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
+    height: inherit;
 }
 
 /* General Styles */
@@ -13,7 +14,7 @@ body {
     font-size: 1rem;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    /* line-height: 1.6; */
     background-color: #1f1e1e;
     color: #ffffff;
 }
@@ -42,6 +43,8 @@ p{
 
 main {
     padding: 2rem 1rem;
+    /* padding-bottom: 0; */
+    /* height: inherit; */
 }
 
 a{
@@ -62,11 +65,10 @@ a:hover{
 
 h2 {
     color: #ffffff;
-    margin-bottom: 1rem;
 }
 
 section {
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
 }
 
 #introduction {
@@ -77,10 +79,28 @@ section {
     max-width: 200px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 1rem;
+
 }
 
 textarea,
 input,
+
+footer {
+    background: #720000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
 
 
 /* button {
@@ -97,18 +117,3 @@ input,
 button:hover {
     background: #ff8400;
 } */
-
-footer {
-    background: #720000;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-}
