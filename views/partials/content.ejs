@@ -1,19 +1,35 @@
 
-<div id="login-screen">
-    <div class="login-container">
-        <h2>Logg Inn</h2>
-        <form id="login-form">
-            <label for="username">Brukernavn:</label>
-            <input type="text" id="username" name="username" required>
+    <header>
+        <div class="container">
+            <h1>Velkommen til vår samfunnsfaglige undersøkelse</h1>
+        </div>
+    </header>
 
-            <label for="password">Passord:</label>
-            <input type="password" id="password" name="password" required>
+    <main>
+        <section id="introduction">
+            <div class="container">
+                <p>
+                    Dette nettstedet er utviklet som en del av vårt tverrfaglige prosjekt for å samle inn data til en samfunnsfaglig undersøkelse. 
+                    Informasjonen som samles inn vil kun bli brukt til faglige formål. Undersøkelsen er <strong>anonym</strong>, 
+                    med mindre annet er oppgitt. <br><br> Trykk på kanppen nedenfor eller scan QR-koden for å gå til undersøkelsen.
+                </p>
+                
+                <!-- <a href="../survey.ejs" class="button">Gå til undersøkelsen</a> -->
+            </div>
+        </section>
 
-            <button type="submit">Login</button>
-        </form>
-    </div>
-</div>
+        <section id="qr-section">
+            <h2>Scan QR-koden for å delta</h2>
+            <div class="qr-code">
+                <img src="/img/qr-code-placeholder.png" alt="QR kode for undersøkelsen">
+            </div>
+        </section>
+        <section>
+            <a href="./survey"> Til undersøkelse </a>
+            <!-- <button id="survey-btn"></button> -->
+        </section>
 
-<h1>DOOD</h1>
+    </main>
 
-<img src="/img/Doom.jpg" alt="The Slayer">
+
+

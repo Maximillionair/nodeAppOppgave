@@ -6,6 +6,14 @@ const renderindex = (req, res, next)=>{
     res.render('index');
 };
 
+const surveypage = (req, res, next)=>{
+    res.render('survey');
+};
+
+const renderthanks = (req, res, next)=>{
+    res.render('thankyou');
+};
+
 const login = (req, res)=>{
     const { username, password } = req.body;
 
@@ -35,6 +43,8 @@ module.exports={
     renderindex,
     eksempel,
     form,
-    login
+    login,
+    surveypage,
+    renderthanks
 };
 
