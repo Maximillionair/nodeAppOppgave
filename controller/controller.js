@@ -10,6 +10,10 @@ const surveypage = (req, res, next)=>{
     res.render('survey');
 };
 
+const datapage = (req, res, next)=>{
+    res.render('data');
+}
+
 const renderthanks = (req, res, next)=>{
     res.render('thankyou');
 };
@@ -45,6 +49,7 @@ module.exports={
     form,
     login,
     surveypage,
+    datapage,
     renderthanks
 };
 

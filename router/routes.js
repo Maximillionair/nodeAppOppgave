@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {renderindex, eksempel, login,
-surveypage, renderthanks} = require('../controller/controller');
+surveypage, datapage, renderthanks} = require('../controller/controller');
 
 
 router.get('/', renderindex);
@@ -11,6 +11,8 @@ router.get("/eksempel", eksempel);
 router.post("/login", login);
 
 router.get("/survey", surveypage);
+
+router.get("/data", datapage);
 
 router.get("/thankyou", renderthanks);
 
