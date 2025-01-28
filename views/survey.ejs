@@ -1,4 +1,52 @@
 <%-include("./partials/head.ejs")%>
-<h1>survey</h1>
-<a href="./thankyou">thx page</a>
+<main>
+    <section id="survey-intro">
+        <div class="container">
+            <p>
+                Takk for at du deltar i vår samfunnsfaglige undersøkelse. Vennligst svar på spørsmålene nedenfor. 
+                Informasjonen som samles inn er <strong>anonym</strong> og vil kun bli brukt til faglige formål. 
+            </p>
+        </div>
+    </section>
+
+    <section id="survey-form">
+        <form action="/thankyou" method="POST" class="container">
+            <!-- Question 1 -->
+            <div class="form-group">
+                <label for="question1">1. Er du fornøyd eller misfornøyd med den politiske situasjonen i Norge akkurat nå?</label>
+                <textarea id="question1" name="question1" rows="3" placeholder="Skriv svaret ditt her..." required></textarea>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="form-group">
+                <label for="question2">2. Blir du påvirket av politikk i utlandet, for eksempel det amerikanske presidentvalget?</label>
+                <textarea id="question2" name="question2" rows="3" placeholder="Skriv svaret ditt her..." required></textarea>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="form-group">
+                <label for="question3">3. Synes du å kjøpe Tesla er et politisk spørsmål?</label>
+                <textarea id="question3" name="question3" rows="3" placeholder="Skriv svaret ditt her..." required></textarea>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="form-group">
+                <label for="question4">4. Hvilket parti stemte du på ved forrige valg?</label>
+                <textarea id="question4" name="question4" rows="3" placeholder="Skriv svaret ditt her..." required></textarea>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="form-group">
+                <label for="question5">5. Kommer du til å stemme det samme i år?</label>
+                <textarea id="question5" name="question5" rows="3" placeholder="Skriv svaret ditt her..." required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="submit-button">Send inn svar</button>
+            </div>
+        </form>
+    </section>
+</main>
+<!-- <a href="./thankyou">thx page</a> -->
 <%-include("./partials/foot.ejs")%>
