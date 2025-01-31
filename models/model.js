@@ -6,6 +6,15 @@ const UserSchema = new mongoose.Schema({
   });
   
   // Create a Mongoose model for users
- const User = mongoose.model('User', UserSchema);
+const User = mongoose.model('User', UserSchema);
 
- module.exports=User;
+const surveySchema = new mongoose.Schema({
+  question1: String,
+  question2: String,
+  question3: String,
+  question4: String,
+  question5: String,
+  submittedAt: { type: Date, default: Date.now },
+});
+
+module.exports=User, surveySchema;
