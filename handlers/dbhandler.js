@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 async function connectDB() {
     try {
-      await mongoose.connect('mongodb://10.12.10.170:27017/local');
+      await mongoose.connect('mongodb://10.12.10.170:27017/survey');
       console.log('Connected to MongoDB');
     } catch (error) {
       console.error('MongoDB connection failed:', error);

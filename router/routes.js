@@ -1,19 +1,28 @@
 const express = require('express');
 const router = express.Router();
-const {renderindex, eksempel, login,
-surveypage, datapage, renderthanks} = require('../controller/controller');
+const { 
+    renderindex, 
+    surveypage, 
+    datapage, 
+    renderthanks, 
+    login, 
+    submitSurvey,
+    getSurveys 
+} = require('../controller/controller');
 
-
+// Define routes
 router.get('/', renderindex);
 
-router.get("/eksempel", eksempel);
+router.get('/survey', surveypage);
 
-router.post("/login", login);
+router.get('/data', datapage);
 
-router.get("/survey", surveypage);
+router.get('/thank-you', renderthanks);
 
-router.get("/data", datapage);
+router.post('/login', login);
 
-router.get("/thankyou", renderthanks);
+router.post('/submit-survey', submitSurvey);
 
-module.exports=router
+router.get('/surveys', getSurveys);
+
+module.exports = router;
