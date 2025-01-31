@@ -1,6 +1,5 @@
 const express = require('express');
-const Survey = require("../models/model.js");
-console.log(Survey)
+const Survey = require("../models/surveyModel");
 
 const renderindex = (req, res) => {
     res.render('index');
@@ -29,9 +28,11 @@ const login = (req, res) => {
 
 const submitSurvey = async (req, res) => {
     try {
-        console.log("Received survey submission:", req.body);
+        const {question1, question2, question3, question4, question5} = req.body;
 
-        const newSurvey = new Survey(req.body);
+        console.log("Received survey submission:", question1, question2, question3, question4, question5);
+
+        const newSurvey = new Survey({question1, question2, question3, question4, question5});
         await newSurvey.save();
 
         res.status(201).json({ message: "Survey submitted successfully!" });
