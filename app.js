@@ -14,12 +14,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-  origin: 'http://10.12.10.170:3150', // Tillat spesifikke opprinnelser
+  origin: 'http://10.12.10.170:3250', // Tillat spesifikke opprinnelser
   methods: ['GET', 'POST'], // Tillatte metoder
 }));
 app.use(router);
 
-const PORT = process.env.PORT || 3150;
+const PORT = process.env.PORT || 3250;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
   connectDB();
