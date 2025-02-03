@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-// const cors = require('cors');
+const cors = require('cors');
 const router = require('./router/routes.js'); 
 const app = express();
 const {connectDB} = require("./handlers/dbhandler.js");
@@ -13,7 +13,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// app.use(cors);
+app.use(cors({
+  origin: 'http://10.12.10.24:3500', // Tillat spesifikke opprinnelser
+  methods: ['GET', 'POST'], // Tillatte metoder
+}));
 app.use(router);
 
 const PORT = process.env.PORT || 3150;
