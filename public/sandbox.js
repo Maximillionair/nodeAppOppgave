@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             // Send data to backend
-            const response = await fetch("http://localhost:3150/submit-survey", {
+            const response = await fetch("http://localhost:3250/submit-survey", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
