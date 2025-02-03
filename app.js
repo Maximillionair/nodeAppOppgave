@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
-  origin: 'http://10.12.10.24:3500', // Tillat spesifikke opprinnelser
+  origin: 'http://10.12.10.170:3500', // Tillat spesifikke opprinnelser
   methods: ['GET', 'POST'], // Tillatte metoder
 }));
 app.use(router);
