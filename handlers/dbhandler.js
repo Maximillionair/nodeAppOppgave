@@ -7,7 +7,7 @@ async function connectDB() {
         console.log("MongoDB connected successfully!");
     });
 
-      await mongoose.connect('mongodb://10.12.10.170:27017/survey');
+      await mongoose.connect('mongodb://10.10.1.114:27017/survey');
       console.log('Connected to MongoDB');
 
     } catch (error) {

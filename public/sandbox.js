@@ -30,7 +30,7 @@
 //     async function getData(username, password){
     
 //         try {
-//             const result = await fetch("http://localhost:3150/login", {
+//             const result = await fetch("http://10.12.10.170:3250/login", {
 //                 method: "POST",
 //                 headers: {
 //                     "Content-Type": "application/json"
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             // Send data to backend
-            const response = await fetch("http://10.12.10.170:3250/submit-survey", {
+            const response = await fetch("http://10.10.1.114:3250/submit-survey", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // async function getData(){
     
 // try {
-//     const result = await fetch("http://localhost:3150/")
+//     const result = await fetch("http://localhost:3250/")
 //     const json = await result.json();
 //     console.log(json);
 // } catch (err) {
